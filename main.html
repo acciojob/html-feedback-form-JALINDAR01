@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <h2>Feedback Form</h2>
+    <label for="name">NAME : 
+    <input type="text" id="name" minlength="3" maxlength="50">
+    </label>
+    <br>
+
+    <label for="portfolio">PORTFOLIO
+        <input type="text" id="portfolio">
+    </label>
+    <br>
+
+    <label for="FAVCOLOUR">FAVCOLOUR
+        <input type="color" id="favColor" name="favColor">
+    </label>
+    <br>
+
+    <label for="likeliness">LIKELINESS
+        <input type="range" id="likeliness" min="1" max="100" >
+    </label>
+     <br>
+
+    <button>SUBMIT</button>
 
 </body>
-
 </html>
