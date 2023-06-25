@@ -8,39 +8,19 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form>
-		<h1>Feedback Form</h1>
-		<label for="name">Name</label>
-		<input type="text" id="name" minlength="3" maxlength="50" required>
-		<br>
-		<br>
-		
-		<label for="portfolio">Portfolio</label>
-		<input type="text" id="portfolio" required>
-		<br>
-		<br>
-		
-		<label for="favColor">Favorite Color</label>
-		<select id="favColor" >
-			<option value="red">Red</option>
-			<option value="blue">Blue</option>
-			<option value="orange">Orange</option>
-			<option value="green">Green</option>
-			<option value="yellow">Yellow</option>
-			<option value="other">Other</option>
-		</select>
-		<br>
-		<br>
-		
-		<label for="likeness">Likeness</label>
-		<input type="range" id="likeness" min="1" max="100" required>
-		<br>
-		<br>
-		
-		<input type="submit" value="Submit">
-		<br>
+    <h1>Feedback Form</h1>
+	<form action="/submit" method="post">
+		<label for="name">Enter your Name</label>
+		<input minlength="3" maxlength="50" required id="name" type="text" name="name" placeholder="Enter your name"><br><br>
+	<label for="portfolio" >Enter your portfolio</label>
+		<input  required id="portfolio" type="url" name="portfolio" placeholder="Enter your portfolio"><br><br>
+	<label for="favColor">Enter your favColor </label>
+		<input type="color" name="favColor" id="favColor"><br><br>
+	<label for="likeness" >Enter your likeness</label>
+		<input type="range" name="likeness" id="likeness"min="1" max="100">
+		<button>Submit</button>
 	</form>
-    <script type="text/javascript" src="./script.js">
+	<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
